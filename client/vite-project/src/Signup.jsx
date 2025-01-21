@@ -14,10 +14,10 @@ const Signup = () => {
       <div className="max-w-md w-full backdrop-blur-xl bg-white/20 rounded-2xl shadow-2xl overflow-hidden border border-white/30">
         <div className="p-8">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-gray-800 mb-2">
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">
               {isLogin ? 'Welcome Back!' : 'Create Account'}
             </h1>
-            <p className="text-gray-700">
+            <p className="text-gray-900">
               {isLogin 
                 ? 'Enter your credentials to access your account' 
                 : 'Sign up to start chatting with your friends'}
@@ -27,14 +27,14 @@ const Signup = () => {
           <form className="space-y-6">
             {!isLogin && (
               <div>
-                <label className="block text-sm font-medium text-gray-800 mb-2">
+                <label className="block text-sm font-medium text-gray-900 mb-2">
                   Username
                 </label>
                 <div className="relative">
-                  <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600" size={20} />
+                  <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-700" size={20} />
                   <input
                     type="text"
-                    className="w-full pl-10 pr-4 py-3 bg-white/30 border border-white/40 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition text-gray-800 placeholder-gray-600"
+                    className="w-full pl-10 pr-4 py-3 bg-white/30 border border-white/40 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition text-gray-900 placeholder-gray-700"
                     placeholder="Enter your username"
                   />
                 </div>
@@ -42,28 +42,28 @@ const Signup = () => {
             )}
 
             <div>
-              <label className="block text-sm font-medium text-gray-800 mb-2">
+              <label className="block text-sm font-medium text-gray-900 mb-2">
                 Email Address
               </label>
               <div className="relative">
-                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600" size={20} />
+                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-700" size={20} />
                 <input
                   type="email"
-                  className="w-full pl-10 pr-4 py-3 bg-white/30 border border-white/40 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition text-gray-800 placeholder-gray-600"
+                  className="w-full pl-10 pr-4 py-3 bg-white/30 border border-white/40 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition text-gray-900 placeholder-gray-700"
                   placeholder="Enter your email"
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-800 mb-2">
+              <label className="block text-sm font-medium text-gray-900 mb-2">
                 Password
               </label>
               <div className="relative">
-                <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600" size={20} />
+                <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-700" size={20} />
                 <input
                   type="password"
-                  className="w-full pl-10 pr-4 py-3 bg-white/30 border border-white/40 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition text-gray-800 placeholder-gray-600"
+                  className="w-full pl-10 pr-4 py-3 bg-white/30 border border-white/40 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition text-gray-900 placeholder-gray-700"
                   placeholder="Enter your password"
                 />
               </div>
@@ -76,11 +76,11 @@ const Signup = () => {
                     type="checkbox"
                     className="h-4 w-4 bg-white/30 border-white/40 rounded focus:ring-2 focus:ring-purple-500"
                   />
-                  <label className="ml-2 block text-sm text-gray-700">
+                  <label className="ml-2 block text-sm text-gray-900">
                     Remember me
                   </label>
                 </div>
-                <button type="button" className="text-sm font-medium text-purple-700 hover:text-purple-600">
+                <button type="button" className="text-sm font-medium text-purple-800 hover:text-purple-700">
                   Forgot password?
                 </button>
               </div>
@@ -98,7 +98,7 @@ const Signup = () => {
           <div className="mt-6 text-center">
             <button
               onClick={() => setIsLogin(!isLogin)}
-              className="text-sm text-purple-700 hover:text-purple-600 font-medium"
+              className="text-sm text-purple-800 hover:text-purple-700 font-medium"
             >
               {isLogin 
                 ? "Don't have an account? Sign up" 
